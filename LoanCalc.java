@@ -4,7 +4,7 @@
 public class LoanCalc {
 	
 	static double epsilon = 0.001;  // The computation tolerance (estimation error)
-	static long iterationCounter = 0;    // Monitors the efficiency of the calculation
+	static int iterationCounter = 0;    // Monitors the efficiency of the calculation
 	static int g = 0;
     /** 
      * Gets the loan data and computes the periodical payment.
@@ -71,7 +71,7 @@ public class LoanCalc {
 	*/
 	private static double endBalance(double loan, double rate, int n, double payment) {
 		double endB = 0;
-		double presentB = 0;
+		double presentB = loan;
 		for (int i = 0; i < n; i++) {
 			endB = (presentB - payment)*(1+rate/100);
 			presentB = endB;
