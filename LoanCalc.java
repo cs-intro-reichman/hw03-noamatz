@@ -14,7 +14,7 @@ public class LoanCalc {
 	public static void main(String[] args) {		
 		// Gets the loan data
 		double loan = Double.parseDouble(args[0]);
-		double rate = Double.parseDouble(args[1]);
+		double rate = Double.parseDouble(args[1])*0.01;
 		int n = Integer.parseInt(args[2]);
 		System.out.println("Loan sum = " + loan + ", interest rate = " + rate + "%, periods = " + n);
 		
