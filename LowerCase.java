@@ -10,8 +10,16 @@ public class LowerCase {
     * except that all the upper-case letters are converted to lower-case letters.
     * Non-letter characters are left as is.
     */
-    public static String lowerCase(String s) {
-        // Replace the following statement with your code
-        return null;
+    public static String lowerCase(String str) {
+        String fin = "";
+		for (int i = 0; i < str.length(); i++) {
+			char ch = str.charAt(i);
+			if ((ch >= 'A') && (ch <= 'Z')) {
+				fin = fin + (char)(str.charAt(i) + 32);
+			} else { 
+				fin = fin + str.charAt(i);
+			}
+		}
+        return fin;
     }
 }
