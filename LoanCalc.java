@@ -60,7 +60,7 @@ public class LoanCalc {
 		double interest = 1 + (rate * 0.01);
 		double PeriodicPayment = 0;
 		double bottom = 1-(1/Math.pow(interest,n));
-		PeriodicPayment = (loan * (rate*0.01)/bottom;	
+		PeriodicPayment = (loan * (rate*0.01)/bottom);	
 		iterationCounter++;
     	return (PeriodicPayment);
     }
