@@ -68,7 +68,7 @@ public class LoanCalc {
 			} else {
 				H = g;
 			}
-			g = (H+L)/2;
+			g = (H-L)/2;
 			iterationCounter++;
 		}
 		return g;
