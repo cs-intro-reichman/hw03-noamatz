@@ -4,8 +4,8 @@
 public class LoanCalc {
 	
 	static double epsilon = 0.001;  // The computation tolerance (estimation error)
-	static int iterationCounter;    // Monitors the efficiency of the calculation
-	
+	static int iterationCounter = 0;    // Monitors the efficiency of the calculation
+	static int g = 0;
     /** 
      * Gets the loan data and computes the periodical payment.
      * Expects to get three command-line arguments: sum of the loan (double),
@@ -39,8 +39,13 @@ public class LoanCalc {
 	*/
 	// Side effect: modifies the class variable iterationCounter.
     public static double bruteForceSolver(double loan, double rate, int n, double epsilon) {  
-    	// Replace the following statement with your code
-    	return 0;
+    	double periodicPayment = 0;
+		double interest = 1 + rate;
+		double PeriodicPayment = 0;
+		double bottom = 1-(1/Math.pow(interest,n));
+		PeriodicPayment = (loan * rate)/bottom;	
+		iterationCounter++;
+    	return (PeriodicPayment);
     }
     
     /**
@@ -51,8 +56,13 @@ public class LoanCalc {
 	*/
 	// Side effect: modifies the class variable iterationCounter.
     public static double bisectionSolver(double loan, double rate, int n, double epsilon) {  
-    	// Replace the following statement with your code
-    	return 0;
+    	double periodicPayment = 0;
+		double interest = 1 + rate;
+		double PeriodicPayment = 0;
+		double bottom = 1-(1/Math.pow(interest,n));
+		PeriodicPayment = (loan * rate)/bottom;	
+		iterationCounter++;
+    	return (PeriodicPayment);
     }
 	
 	/**
@@ -60,7 +70,12 @@ public class LoanCalc {
 	* interest rate (as a percentage), the number of periods (n), and the periodical payment.
 	*/
 	private static double endBalance(double loan, double rate, int n, double payment) {
-		// Replace the following statement with your code
-    	return 0;
+		double periodicPayment = 0;
+		double interest = 1 + rate;
+		double PeriodicPayment = 0;
+		double bottom = 1-(1/Math.pow(interest,n));
+		PeriodicPayment = (loan * rate)/bottom;	
+		iterationCounter++;
+    	return (PeriodicPayment);
 	}
 }
