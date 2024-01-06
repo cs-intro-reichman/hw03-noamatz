@@ -73,7 +73,7 @@ public class LoanCalc {
 		double endB = 0;
 		double presentB = 0;
 		for (int i = 0; i < n; i++) {
-			endB = (presentB = payment)*(1+rate/100);
+			endB = (presentB - payment)*(1+rate/100);
 			presentB = endB;
 		}
 		return endB;
