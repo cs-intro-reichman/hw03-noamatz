@@ -14,7 +14,7 @@ public class LowerCase {
         String fin = "";
 		for (int i = 0; i < str.length(); i++) {
 			char ch = str.charAt(i);
-			if ((ch >= 'A') && (ch <= 'Z')) {
+			if ((ch >= 'A') && (ch <= 'Z')){
 				fin = fin + (char)(str.charAt(i) + 32);
 			} else { 
 				fin = fin + str.charAt(i);
