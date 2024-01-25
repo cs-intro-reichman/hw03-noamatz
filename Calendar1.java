@@ -72,6 +72,12 @@ public class Calendar1 {
 	// April, June, September, and November have 30 days each.
 	// February has 28 days in a common year, and 29 days in a leap year.
 	// All the other months have 31 days.
+
+	/*
+ 	#feedback
+  	please see my notes regarding this implementation on Calendar.java file
+ 	*/
+	
 	private static int nDaysInMonth(int month, int year) {
 		int days = 0;
 		if (isLeapYear(year)) {
