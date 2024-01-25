@@ -1,3 +1,8 @@
+/*
+#feedback
+good work!
+*/
+
 /**
 * Computes the periodical payment necessary to re-pay a given loan.
 */
